@@ -1,0 +1,53 @@
+/* page layout */
+body {
+    background-color: orange;  /* outside space in orange */
+    font-family: "Segoe UI", Tahoma, Verdana, sans-serif;
+    padding: 2rem;
+  }
+  
+.page-wrapper {
+    background: rgb(228, 225, 220); /* vibrant orange */
+    padding: 2rem 0;
+}
+  
+  /* Card / form background: white (new class) */
+  .form-card {
+    background-color: hsl(40, 12%, 95%);
+    border-radius: 12px;
+  }
+  
+  /* New button class (do not override .btn-success) */
+  .btn-custom-success {
+    background-color: #28a745;      /* green */
+    color: #ffffff;
+    border: 1px solid #28a745;
+  }
+  .btn-custom-success:hover,
+  .btn-custom-success:focus {
+    background-color: #218838; /* darker on hover */
+    border-color: #1e7e34;
+  }
+  
+  /* small visual helpers */
+  .form-title {
+    font-weight: 600;
+    letter-spacing: 0.2px;
+  }
+  .required {
+    color: #d63384;
+  }
+  
+  /* form-group is just a wrapper class — keeps HTML organized */
+  .form-group {
+    /* spacing handled with mb-3 in markup; keep this empty or add non-invasive rules */
+  }
+  
+  /* Accessibility: focus */
+  .form-control:focus {
+    box-shadow: 0 0 0 0.15rem rgba(13,110,253,0.08);
+  }
+  
+  /* Small screens adjustments */
+  @media (max-width: 576px) {
+    .form-card { padding: 1rem; }
+  }
