@@ -1,0 +1,30 @@
+/* 1. Add this reset to fix the extra space */
+body, html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* 2. This is your code from the original <style> tag */
+.navbar-nav .nav-link {
+  font-weight: bold;
+}
+
+body {
+  font-weight: bold;
+}
+
+/* I removed this from your 'Hero.jsx' file and put it here,
+  which is a much cleaner way to do it.
+*/
+.hero-section {
+  background-image: url("/assets/image/background.webp");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
